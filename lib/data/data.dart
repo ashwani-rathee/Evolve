@@ -40,7 +40,7 @@ List<SliderModel> getSlides() {
   sliderModel.setDesc(
       "Evolve is a beautifully simple way to to visualize your breathing \n Use Evolve for daily relaxation,mediation or breath training. \n Thank you for downloading Evolve and taking the first step to control+visualize your breathing");
   sliderModel.setTitle("Tutorial,");
-  sliderModel.setImageAssetPath("assets/illustration.png");
+  sliderModel.setImageAssetPath("assets/orange.png");
   slides.add(sliderModel);
 
   sliderModel = new SliderModel();
