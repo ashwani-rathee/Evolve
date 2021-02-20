@@ -1,3 +1,5 @@
+import 'package:evolve/intro.dart';
+import 'package:evolve/splashscreen.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:numberpicker/numberpicker.dart';
@@ -20,19 +22,21 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        fontFamily: 'ag',
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-      routes: {
-        'second': (context) => WaveDemoHomePage(),
-        'example': (context) => Example(),
-      },
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          fontFamily: 'ag',
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+        ),
+        home: SplashScreen(),
+        routes: {
+          'second': (context) => WaveDemoHomePage(),
+          'example': (context) => Example(),
+          'splashscreen': (context) => SplashScreen(),
+          'homepage': (context) => MyHomePage(title: 'Flutter Demo Home Page'),
+          'intro': (context) => Home(),
+        });
   }
 }
 
